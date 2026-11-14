@@ -1,1 +1,15 @@
 .issueboxtitle{display:flex;align-items:center;gap:13px}.issueboxtitle>span{display:flex;padding:11px;border-radius:9px;background:#eef4e7;color:#829a69}.issuebox .sectiontitle{padding-bottom:20px;flex-wrap:wrap}.issuecountergrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;padding:0 23px 23px}.issuecounter{display:flex;flex-direction:column;background:#fafbf8;border:1px solid #e5ebdf;border-radius:8px;padding:17px;transition:border-color .15s,background .15s}.issuecounter:hover{border-color:#a5bb8e;background:#f4f8ed}.issuecounter>div{display:flex;justify-content:space-between;color:#a5b298}.issuecounter.hasissues>div>svg:first-child{color:#b59a64}.issuecounter>strong{font-family:Manrope,sans-serif;font-size:30px;letter-spacing:-1px;color:#597044;margin:13px 0 8px;font-weight:750}.issuecounter.clear>strong{color:#a5b49a}.issuecounter>span{font-size:11px;color:#627852;font-weight:550;line-height:1.5}.issuecounter>small{font-size:9px;margin-top:6px;color:#9baa8c;line-height:1.65}.issuebox:nth-child(2) .issuecountergrid{grid-template-columns:repeat(3,minmax(0,1fr))}.overviewnote{font-size:10px;color:#a0ad94;margin:0 0 15px}@media(max-width:1150px){.issuecountergrid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.issuecountergrid{padding:0 16px 16px;gap:10px}.issuecounter{padding:14px}.issuecounter>strong{font-size:27px;margin-top:10px}.issuecounter>span{font-size:10px}.issuecounter>small{font-size:9px}.issuebox:nth-child(2) .issuecountergrid{grid-template-columns:1fr}.issueboxtitle{gap:10px}.issueboxtitle p{font-size:9px}.overviewnote{font-size:9px}}
+:root[data-theme=dark] .manageroverview .issuebox{background:#141e18;border-color:#2b3b2e;box-shadow:none}
+:root[data-theme=dark] .manageroverview .issuecounter{background:#18241c;border-color:#2d3e30;box-shadow:none}
+:root[data-theme=dark] .manageroverview .issuecounter:hover{background:#1e3022;border-color:#526d40}
+:root[data-theme=dark] .manageroverview .issueboxtitle>span{background:#1b2e20;color:#a4bd86}
+:root[data-theme=dark] .manageroverview .issueboxtitle h2{color:#d7e2cf}
+:root[data-theme=dark] .manageroverview .issueboxtitle p{color:#9bac90}
+:root[data-theme=dark] .manageroverview .issuecounter>strong{color:#c9d9b7}
+:root[data-theme=dark] .manageroverview .issuecounter.clear>strong{color:#839977}
+:root[data-theme=dark] .manageroverview .issuecounter>span{color:#b7c9a6}
+:root[data-theme=dark] .manageroverview .issuecounter>small{color:#93a584}
+:root[data-theme=dark] .manageroverview .issuecounter>div{color:#819573}
+:root[data-theme=dark] .manageroverview .issuecounter.hasissues>div>svg:first-child{color:#c3a974}
+:root[data-theme=dark] .manageroverview .issuebox .badge{background:#203024;color:#afc298;border-color:#344936}
+:root[data-theme=dark] .manageroverview .overviewnote{color:#8c9d7d}
