@@ -14,6 +14,7 @@ import {resolvePortal} from './portal-access';
 import {Competitions} from './Competitions';
 import {competitionApi} from './competition-domain';
 import './theme.css';
+import './brand-palette.css';
 const date=(d:string)=>new Date(d+'T12:00:00').toLocaleDateString('pt-BR');
 const today=()=>new Date().toLocaleDateString('en-CA',{timeZone:'America/Sao_Paulo'});
 function Badge({value}:{value:string}){return <span className={'badge s'+value.replaceAll(' ','')}><i/>{value}</span>}

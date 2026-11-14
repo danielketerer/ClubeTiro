@@ -1,2 +1,2 @@
 import {clubs} from './domain';
-export function ClubBadge({club}:{club:string}){const item=clubs.find(c=>c.id===club);return club==='a'?<img className="clubicon clublogo" src="/brand/clube-horizonte-logo.png" alt="Logo fictício do Clube Horizonte" width={36} height={36}/>:<span className="clubicon">{item?.initials||'CL'}</span>}
+export function ClubBadge({club}:{club:string}){const item=clubs.find(c=>c.id===club);const logo=club==='a'?'/brand/clube-horizonte-logo.png':club==='b'?'/brand/clube-serra-azul-logo.png':null;return logo?<img className="clubicon clublogo" src={logo} alt={'Logo fictício do '+item?.name} width={36} height={36}/>:<span className="clubicon">{item?.initials||'CL'}</span>}

@@ -1,0 +1,53 @@
+:root,:root[data-theme=light]{--theme-bg:#f5f5f5;--theme-surface:#fff;--theme-raised:#f1f1f2;--theme-border:#dedee1;--theme-text:#202023;--theme-muted:#66666d;--theme-accent:#c51f2e;--brand-primary:#c51f2e;--brand-primary-hover:#a61926;--brand-tint:#fff0f2;--brand-tint-border:#eec4cb;--brand-on:#fff;background:var(--theme-bg);color:var(--theme-text)}
+:root[data-theme=dark]{--theme-bg:#0f0f10;--theme-surface:#18181a;--theme-raised:#222225;--theme-border:#36363b;--theme-text:#eeeeef;--theme-muted:#b1b1b9;--theme-accent:#ff727f;--brand-primary:#c82337;--brand-primary-hover:#df3045;--brand-tint:#301b21;--brand-tint-border:#66313d;--brand-on:#fff;background:var(--theme-bg);color:var(--theme-text)}
+:root[data-theme] body,:root[data-theme] .app,:root[data-theme] .shell{background:var(--theme-bg);color:var(--theme-text)}
+:root[data-theme] .app :is(.sidebar,.topbar,.panel,.stat,.modal,.eventcard,.portaluseroptions,.shopgroups>a,.outline,.inventorytabs>button,.ammotypes>button){background:var(--theme-surface);color:var(--theme-text);border-color:var(--theme-border)}
+:root[data-theme] .app :is(h1,h2,h3,.brand,.workspace strong,.portalusername strong,td strong,.stat>strong,.membercounter>strong,.issuecounter>strong,.shopdetailstats strong,.billtotal strong){color:var(--theme-text)}
+:root[data-theme] .app :is(p,small,.stat>div,.stat>small,.eyebrow,.navlabel,.breadcrumb,.breadcrumb strong,.sectiontitle p,td,.filters label,.shopfilters>label,.compfilters label,.modal label,.modal p,.formhint,.tablefooter,.financenote,.overviewnote,.shopfootnote,.inventorynote,.localstatusline,.portalfooter small){color:var(--theme-muted)}
+:root[data-theme] .app :is(.workspace,.portalfooter,.sidebarlocalstatus,.clubmodulelinks,.shopsubcategories,.caliberselect,.sessionpractice){border-color:var(--theme-border)}
+:root[data-theme] .app :is(.demobar,.feature,.competitionbanner,.sessionintro,.shopbanner,.financebanner,.modalclub,.info,.alert,.criteria,.demobox,.inventorynote,.record,.review,.lanegrid article,.consumptionrow,.sessionbill,.shopdetailstats>div,.datebox){background:var(--theme-raised);border-color:var(--theme-border);color:var(--theme-text)}
+:root[data-theme] .app :is(.demobar>span,.demobar label,.feature p,.feature .eyebrow,.competitionbanner strong,.competitionbanner small,.sessionintro strong,.shopbanner strong,.financebanner strong,.modalclub strong,.sessionbill strong,.sessionbill>div,.caliberselect legend){color:var(--theme-text)}
+:root[data-theme] .app :is(.primary,.toast,.sessionmessage,.tabs .active,.tabs a.active,.comptabs a.active,.financetabs a.active,.inventorytabs>button.active){background:var(--brand-primary);border-color:var(--brand-primary);color:var(--brand-on)}
+:root[data-theme] .app .primary:hover{background:var(--brand-primary-hover);border-color:var(--brand-primary-hover)}
+:root[data-theme] .app :is(.text,.featurelink,.branddot,.headingdot,.portalfooterbrand a,.portalfooterbrand a strong,.sidebarlocalstatus>button,.shopbreadcrumb strong){color:var(--theme-accent)}
+:root[data-theme] .app :is(.clubmoduletoggle,.shopmodulelinks summary,.portaluseroptions>button,nav a){color:var(--theme-muted)}
+:root[data-theme] .app :is(nav a.active,.clubmoduletoggle.current,.clubmoduletoggle:hover,.portaluserbutton:hover,.portaluserbutton[aria-expanded=true],.portaluseroptions>button:hover,.shopgroups>a.selected,.shopquicklinks>a.active,.ammotypes>button.active,.membercounter.selected){background:var(--brand-tint);border-color:var(--brand-tint-border);color:var(--theme-accent);box-shadow:none}
+:root[data-theme] .app :is(nav a:hover,.outline:hover,.issuecounter:hover,.membercounter:hover,.theme-toggle:hover){background:var(--brand-tint);border-color:var(--brand-tint-border);color:var(--theme-accent)}
+:root[data-theme] .app :is(.tabs button,.tabs a,.shopquicklinks>a){background:var(--theme-raised);border-color:var(--theme-border);color:var(--theme-muted)}
+:root[data-theme] .app :is(.tabs button.active,.tabs a.active){background:var(--brand-primary);border-color:var(--brand-primary);color:var(--brand-on)}
+:root[data-theme] .app :is(.avatar,.clubicon,.staticon,.countericon,.attentionicon,.issueboxtitle>span,.sessionintroicon,.shopbanner>span:first-child){background:var(--brand-tint);border-color:var(--brand-tint-border);color:var(--theme-accent)}
+:root[data-theme] .app .brand .logo{background:#202020;color:#ffffff}
+:root[data-theme] .app :is(input,select,textarea,.topactions select,.demobar select,.filters input,.filters select,.compfilters input,.compfilters select,.shopfilters input,.shopfilters select,.modal label input,.modal label select,.modal textarea){background:var(--theme-surface);border-color:var(--theme-border);color:var(--theme-text);accent-color:var(--brand-primary)}
+:root[data-theme] .app :is(input,textarea)::placeholder{color:var(--theme-muted);opacity:.8}
+:root[data-theme] .app :is(.shopsearch svg,.notification,.mobiletoggle,.theme-toggle,.portaluserbutton){color:var(--theme-muted)}
+:root[data-theme] .app :is(button,a,input,select,textarea):focus-visible{outline:2px solid var(--theme-accent);outline-offset:3px}
+:root[data-theme] .app th{background:var(--theme-raised);color:var(--theme-muted);border-color:var(--theme-border)}
+:root[data-theme] .app td{border-color:var(--theme-border)}
+:root[data-theme] .app :is(.badge,.count,.sValidado,.sAtivo,.sInscrito){background:var(--theme-raised);color:var(--theme-text);border-color:var(--theme-border)}
+:root[data-theme] .app :is(.sEmanálise,.sSolicitado,.sVencido,.sDevolvido,.formerror,.inventorylow,.inventorylow.selected,.shopissuefilter){background:var(--brand-tint);color:var(--theme-accent);border-color:var(--brand-tint-border)}
+:root[data-theme] .app :is(.membercounter.amber .countericon,.membercounter.red .countericon,.membercounter.green .countericon,.attentionicon.amber){background:var(--brand-tint);color:var(--theme-accent)}
+:root[data-theme] .app :is(.counteraction,.membercounter.selected .counteraction){color:var(--theme-accent);border-color:var(--theme-border)}
+:root[data-theme] .app :is(.financelate>strong,.issuecounter.hasissues>div>svg:first-child){color:var(--theme-accent)}
+:root[data-theme] .app :is(.issuecounter,.membercounter){background:var(--theme-surface);border-color:var(--theme-border)}
+:root[data-theme] .app .manageroverview .issuebox{background:var(--theme-surface);border-color:var(--theme-border)}
+:root[data-theme] .app .manageroverview .issuecounter{background:var(--theme-bg);border-color:var(--theme-border)}
+:root[data-theme] .app .manageroverview .issuecounter:hover{background:var(--brand-tint);border-color:var(--brand-tint-border)}
+:root[data-theme] .app .manageroverview :is(.issueboxtitle h2,.issuecounter>strong){color:var(--theme-text)}
+:root[data-theme] .app .manageroverview :is(.issueboxtitle p,.issuecounter>span,.issuecounter>small,.issuecounter>div,.overviewnote,.issuecounter.clear>strong){color:var(--theme-muted)}
+:root[data-theme] .app .manageroverview :is(.issueboxtitle>span,.issuebox .badge){background:var(--brand-tint);border-color:var(--brand-tint-border);color:var(--theme-accent)}
+:root[data-theme] .app .manageroverview .issuecounter.hasissues>div>svg:first-child{color:var(--theme-accent)}
+:root[data-theme] .app .competitionmodule .connected{background:var(--brand-tint);box-shadow:inset 3px 0 var(--theme-accent)}
+:root[data-theme] .app :is(.eventart,.eventcard:nth-child(2n) .eventart){background:var(--theme-raised);color:var(--theme-accent)}
+:root[data-theme] .app .watermark{color:var(--theme-border)}
+:root[data-theme] .app .shopgroups>a>div{color:var(--theme-accent)}
+:root[data-theme] .app :is(.sessionbill>div,.billtotal,.counteraction,.portaluseroptions>span){border-color:var(--theme-border)}
+:root[data-theme] .app :is(.theme-toggle-label,.portalusername small,.localversion,.sidebarlocalstatus>small,.portalfooter>div>span,.summarycaption>span,.summarycaption small){color:var(--theme-muted)}
+:root[data-theme] .app :is(.dot,.localstatusline i,.notification i){background:var(--brand-primary)}
+:root[data-theme] .app .inventorytabs>button.active>span{background:#ffffff26;color:#ffffff}
+:root[data-theme] .app :is(.inventorytabs>button>span,.inventorylow>span){background:var(--theme-raised);color:var(--theme-text)}
+:root[data-theme] .app .criteria progress{accent-color:var(--brand-primary)}
+:root[data-theme] .app .sidebar>nav{scrollbar-color:var(--theme-border) transparent}
+:root[data-theme] .accessdenied{background:var(--theme-surface);border-color:var(--theme-border);color:var(--theme-text)}
+:root[data-theme] .accessdenied .primary{background:var(--brand-primary);color:#ffffff}
+:root[data-theme] .app .systemlogo{background:transparent}
+:root[data-theme=light] .app :is(.sVencido,.sDevolvido,.formerror){background:#ffe5e9;color:#a8172c;border-color:#e9a5b0}:root[data-theme=dark] .app :is(.sVencido,.sDevolvido,.formerror){background:#441d28;color:#ffb2c1;border-color:#773449}

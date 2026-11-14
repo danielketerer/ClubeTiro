@@ -2,7 +2,7 @@
 
 Arquivo final: `elo-system-logo.png`.
 
-Imagem de origem fornecida pelo usuário. Versão preparada pela ferramenta integrada ImageGen, com transparência externa e margem reduzida. O símbolo preto, a seta branca e o detalhe vermelho foram mantidos como referência. A aplicação usa uma base branca discreta para preservar o contraste do símbolo nos dois temas. O logo do Clube Horizonte é um arquivo separado.
+Imagem de origem fornecida pelo usuário. Versão preparada pela ferramenta integrada ImageGen, com transparência externa e margem reduzida. O símbolo preto, a seta branca e o detalhe vermelho foram mantidos como referência. A aplicação preserva a transparência externa nos dois temas, sem placa branca de fundo. O logo do Clube Horizonte é um arquivo separado.
 
 Prompt utilizado:
 
