@@ -1,6 +1,6 @@
 # Portal do Gestor
 
-Abra `http://127.0.0.1:5188/#/gestor/visao-geral` e escolha **Ana Martins · Gestor** no seletor de demonstração. O portal tem layout e menu próprios em `/gestor/*`. O gestor é direcionado à visão geral; Atirador e Instrutor continuam nos seus portais, com menus por papel. URLs diretas de gestão exibem acesso restrito quando o papel não é Gestor. O perfil escolhido persiste após recarregar. Isso simula autorização no frontend; a futura API deve repetir a autorização no servidor.
+Abra `http://127.0.0.1:5188/#/gestor/visao-geral` e escolha **Daniel Keterer · Gestor** no seletor de demonstração. O portal tem layout e menu próprios em `/gestor/*`. O gestor é direcionado à visão geral; Atirador e Instrutor continuam nos seus portais, com menus por papel. URLs diretas de gestão exibem acesso restrito quando o papel não é Gestor. O perfil escolhido persiste após recarregar. Isso simula autorização no frontend; a futura API deve repetir a autorização no servidor.
 
 ## Executar
 
@@ -35,3 +35,6 @@ Neste ambiente, a execução usa `C:\Users\Daniel\AppData\Local\Temp\elo-clubes-
 A referência operacional é o cenário fixo de **14/11/2026**. “A vencer” abrange até 14/12/2026, incluindo vencidos. As alterações de auditoria usam o horário real da confirmação. Todos os números de série, CRAF, documentos, cobranças e comprovantes são fictícios. Não há integração PF, gov.br ou biometria. A rotina não contém critérios legais ou procedimentos reais de uso de armas.
 
 **Restaurar dados da demonstração**, no menu lateral, reinicia os dados operacionais dos dois clubes. Os dados dos módulos anteriores e de Competições são preservados. Os testes cobrem acesso por papel, pagamentos, renovação, isolamento, ocupação de recursos, devolução, saldo insuficiente, encerramento idempotente, manutenção, estoque, revisão, vínculos, auditoria, persistência e restauração.
+
+## Ampliação dos associados fictícios
+O cenário inicial agora possui 29 vínculos por clube (58 no total), com 54 novos vínculos. Em cada clube os novos exemplos cobrem 27 combinações independentes de vigência (vigente, próxima de vencer, vencida), finanças (pago, em atraso, cobrança ainda a vencer) e documentação (validado, em análise, vencido). Seis pessoas adicionais são compartilhadas entre clubes com situações diferentes. A migração em src/member-fixtures.ts acrescenta apenas IDs ausentes, preservando os pagamentos, renovações e alterações existentes, sem duplicar os vínculos ao recarregar.

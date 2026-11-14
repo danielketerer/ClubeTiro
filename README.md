@@ -15,7 +15,7 @@ Abra o endereço informado pelo Vite. Para verificar a compilação: `npm run bu
 
 ## Testar os fluxos
 
-1. No seletor de demonstração escolha Rafael Costa, mantenha Clube Horizonte, clique em Registrar sessão, escolha Lucas Almeida e confirme. Troque para Ana Martins e revise o registro em Práticas e habitualidade. Valide ou devolva com justificativa. Troque para Lucas: o histórico consolidado mostra a atualização com o clube original.
+1. No seletor de demonstração escolha Rafael Costa, mantenha Clube Horizonte, clique em Registrar sessão, escolha Lucas Almeida e confirme. Troque para Daniel Keterer e revise o registro em Práticas e habitualidade. Valide ou devolva com justificativa. Troque para Lucas: o histórico consolidado mostra a atualização com o clube original.
 2. Escolha Marina Lopes e Clube Serra Azul. Em Meus vínculos solicite o vínculo. Troque para Ana, mantenha Serra Azul e aceite em Solicitações de vínculo. Volte para Marina: a agenda e o lançamento desse clube estarão liberados. Rafael começa com acesso ativo aos dois clubes.
 3. Escolha Lucas, consulte a pendência em Documentação, alterne para Competições, abra uma etapa e confirme a inscrição simulada. A confirmação aparece no detalhe e no cartão.
 4. Teste filtros de clube, situação, busca e período. No perfil de gestor, Relatórios exporta um CSV identificado como simulado com os filtros atuais.
@@ -28,3 +28,5 @@ Abra o endereço informado pelo Vite. Para verificar a compilação: `npm run bu
 A configuração DEMO-1.0 representa uma meta interna ilustrativa de 8 práticas em 2026, somente validadas, em ambos os clubes. Não representa regra legal. A contagem não atribui regularidade ao CR. Nenhuma regra regulatória foi verificada ou implementada; fontes oficiais devem ser verificadas e versionadas antes de implantar critérios regulatórios. A data do cenário é 14/11/2026; documentos e agenda são dados fixos de demonstração. A tipografia usa fontes web opcionais com fallback local; os fluxos funcionam sem conexão após instalar as dependências.
 
 Detalhes do novo módulo e roteiro de testes: [COMPETICOES.md](COMPETICOES.md).
+
+Novo fluxo de entrada, prática, consumo e cobrança: [ATENDIMENTOS.md](ATENDIMENTOS.md).

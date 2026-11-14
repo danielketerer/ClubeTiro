@@ -5,7 +5,7 @@ O menu oferece Calendário e inscrições, Resultados por etapa e Ranking da tem
 ## Testar
 
 1. Escolha Lucas Almeida e abra Competições. Abra a 4ª etapa, escolha clube representado e recortes, confirme a inscrição e confira Minhas inscrições, abaixo do calendário.
-2. Escolha Ana Martins (Gestor), Clube Serra Azul, Resultados por etapa. Na 4ª etapa de qualquer modalidade, abra a súmula pendente de Lucas, preencha a justificativa e confirme a homologação simulada.
+2. Escolha Daniel Keterer (Gestor), Clube Serra Azul, Resultados por etapa. Na 4ª etapa de qualquer modalidade, abra a súmula pendente de Lucas, preencha a justificativa e confirme a homologação simulada.
 3. Volte para Lucas e consulte Resultados por etapa e Ranking da temporada. Clique na linha do atleta ou em Ver cálculo para conferir as quatro etapas, os três resultados considerados, o descarte e a soma.
 4. Alterne entre Pistola de Ar, Carabina, Trap e IPSC. As colunas, unidades e recortes se adaptam. O gestor do Horizonte não homologa etapas do Serra Azul. Instrutores consultam somente instituições com vínculo ativo.
 5. Restaurar competições reinicia somente este módulo. Restaurar cenário inicial reinicia todos os módulos.
