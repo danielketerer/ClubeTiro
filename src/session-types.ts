@@ -1,3 +1,4 @@
+import {demoMaskedCpf,maskCpf} from './affiliate-identity';
 import {normalizeFinance} from './finance-domain';
 import {addMemberFixtures} from './member-fixtures';
 import {normalizeStock} from './stock-types';
@@ -13,10 +14,11 @@ export function normalizeOperations(data:ManagerState):ManagerState {
 const s=JSON.parse(JSON.stringify(data)) as ManagerState;
 s.attendances??=[];s.operationSettings??=defaultOperationSettings();
 for(const staff of s.staff)if(staff.role==='Gestor'&&staff.name==='Ana Martins')staff.name='Daniel Keterer';
+for(const member of s.memberships)member.cpfMasked=member.cpfMasked?maskCpf(member.cpfMasked):demoMaskedCpf(member.name);
 for(const member of s.memberships)member.documentedCalibers??=['.22 LR','9 mm'];
 for(const weapon of s.weapons)weapon.caliber??=weapon.id.endsWith('-2')?'9 mm':'.22 LR';
 for(const item of s.stock){if(item.id.endsWith('-ammo'))item.caliber??='.22 LR'}
 for(const clubId of ['a','b'])if(!s.stock.some(i=>i.id===clubId+'-ammo9'))s.stock.push({id:clubId+'-ammo9',clubId,name:'Munição 9 mm · fictícia',caliber:'9 mm',unit:'unidades',lot:'LOTE-DEMO-9-'+clubId,balance:120,minimum:50,movements:[]});
 for(const session of s.sessions){session.calibers??=['.22 LR'];session.weaponSource??=session.weaponId?'Clube':'Própria';session.pricingSnapshot??=s.operationSettings.find(c=>c.clubId===session.clubId)}
-return normalizeFinance(addMemberFixtures(normalizeStock(s)));
+const result=normalizeFinance(addMemberFixtures(normalizeStock(s)));for(const member of result.memberships)member.cpfMasked=member.cpfMasked?maskCpf(member.cpfMasked):demoMaskedCpf(member.name);return result;
 }

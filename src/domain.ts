@@ -1,7 +1,7 @@
 export type Role='Gestor'|'Instrutor'|'Atirador';
 export type Status='Em análise'|'Validado'|'Devolvido'|'Vencido';
 export interface Review{date:string;author:string;status:Status;reason:string}
-export interface Practice{calibers?:string[];id:string;club:string;athlete:string;date:string;modality:string;type:'Treino'|'Competição';author:string;status:Status;reviews:Review[]}
+export interface Practice{cpfMasked?:string;calibers?:string[];id:string;club:string;athlete:string;date:string;modality:string;type:'Treino'|'Competição';author:string;status:Status;reviews:Review[]}
 export interface Link{instructor:string;club:string;status:'Ativo'|'Solicitado'}
 export interface Document{id:string;owner:string;name:string;number:string;expires:string;status:Status}
 export interface Event{id:string;club:string;name:string;date:string;modality:string;category:string;class:string;kind:'Treino'|'Competição'}
